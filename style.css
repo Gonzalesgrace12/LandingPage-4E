@@ -1,0 +1,232 @@
+/* style.css */
+body {
+    font-family: Georgia, 'Times New Roman', sans-serif;
+    background-color: #f4f4f4;
+    color: #c9d60f;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #007bff;
+    text-align: center;
+    padding: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+<nav class="navbar navbar-expand-lg shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+      <style>
+      /* Global Styles */
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f7f7f7;
+        color: #333;
+        line-height: 1.6;
+        transition: background-color 0.3s ease-in-out;
+      }
+  
+      /* Navbar Styling */
+      .navbar {
+        background-color: #b49c4d;
+        border-bottom: 2px solid #eaeaea;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      }
+  
+      .navbar .navbar-brand {
+        font-weight: 600;
+        color: #fff;
+      }
+  
+      .navbar-nav .nav-link {
+        color: #fff;
+        font-weight: 500;
+      }
+  
+      .navbar-nav .nav-link:hover {
+        color: #010508;
+      }
+  
+      /* Banner Section */
+      #banner {
+        background: linear-gradient(to bottom, rgba(88, 27, 27, 0.3), rgba(112, 138, 18, 0.7)), url('./OIP.jpeg') no-repeat center center;
+        background-size: cover;
+        height: 50vh;
+        color: rgb(240, 183, 183);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+  
+      #banner h6 {
+        font-size: 2rem;
+        font-weight: 600;
+        color: white;
+      }
+  
+      #banner p {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        color: white;
+      }
+  
+      /* Button Styling */
+      .btn-primary {
+        background-color: white;
+        border: 1px solid rgb(226, 11, 11);
+        color: black;
+        border-radius: 0;
+        padding: 12px 34px;
+        font-size: 20px;
+        transition: all 0.3s ease-in-out;
+      }
+  
+      .btn-primary:hover {
+        background-color: linear-gradient(135deg, #6e7dff, #8a84f6);
+        transform: scale(1.05);
+      }
+  
+      /* About Section */
+      #about {
+        background-color: #ffffff;
+        padding: 50px 0;
+      }
+  
+      #about h2 {
+        font-size: 2.5rem;
+        font-weight: 600;
+      }
+  
+      #about p {
+        font-size: 1.2rem;
+        color: #ff5722;
+      }
+  
+      #about .btn {
+        background-color: rgb(221, 20, 120);
+        border-radius: 30px;
+        padding: 12px 20px;
+      }
+  
+      /* Services Section */
+      #services {
+        padding: 50px 0;
+      }
+  
+      #services h6 {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: #007bff;
+      }
+  
+      #services h2 {
+        font-size: 2.5rem;
+        font-weight: 600;
+      }
+  
+      /* Card Styles */
+      .card {
+        border: none;
+        border-radius: 15px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        overflow: hidden; /* Ensure images don't overflow out of cards */
+      }
+  
+      .card img {
+        width: 100%; /* Make the image take the full width of the card */
+        height: 100%; /* Make the image take the full height of the card */
+        object-fit: cover; /* Ensure the image covers the entire card */
+        transition: transform 0.3s ease; /* Smooth transition on hover */
+      }
+  
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      }
+  
+      .card-body {
+        padding: 20px;
+      }
+  
+      .card-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+  
+      .card-text {
+        font-size: 1rem;
+        color: #555;
+      }
+  
+      /* Contact Us Section */
+      .contact-us-container {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+  
+      /* Media Queries for Mobile */
+      @media (max-width: 768px) {
+        #banner h6 {
+          font-size: 1.8rem;
+          text-align: center;
+          padding: 10px;
+        }
+  
+        #banner p {
+          font-size: 1rem;
+          text-align: center;
+          margin-bottom: 15px;
+        }
+  
+        #banner .btn {
+          font-size: 16px;
+          padding: 10px 30px;
+        }
+  
+        #about h2 {
+          font-size: 2rem;
+        }
+  
+        #about p {
+          font-size: 1rem;
+        }
+  
+        #services h2 {
+          font-size: 2rem;
+        }
+  
+        .card-body {
+          padding: 15px;
+        }
+  
+        .hh {
+          width: 90%;
+        }
+      }
+    </style>
+  </head>
+  
+  <body>
